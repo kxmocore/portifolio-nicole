@@ -1,0 +1,194 @@
+body{
+    color: #ece7e2;
+    background-color: #4a7766;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        padding: 16px;
+    }
+a {
+    color: #ece7e2;
+    text-decoration: none;
+}
+
+header img {
+    width: 250;
+    height: 250px;
+    border-radius: 90%;
+    border: 5px solid #ece7e2;
+    margin-top: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 90px;
+    margin-bottom: 5px;
+    color: #ece7e2;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    margin-top: 250px;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.container {
+    padding: 0px 50px;
+}
+
+
+.navebar {
+    transition: 0.4s;
+    background-color: #3F6557; 
+    border-radius: 10px;
+
+}
+
+.navebar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navbar a:hover {
+    background-color: #3F6557;
+    border-radius: 4px;
+  }
+
+  h2{
+    margin-top: 0px;
+    font-size: 25px;
+  }
+
+  h3{
+    margin-top: 40px;
+  }
+
+.menu {
+    background-color: #3F6557;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+.menu a {
+    color: white;
+    font-size: 16px;
+    margin: 7px;
+    text-decoration: none;
+  }
+
+  h4{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h5 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #formacao {
+    background-color: #3F6557;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  #formacao h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .formacao-item {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .formacao-item h3 {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .formacao-item p {
+    font-size: 16px;
+    color: white;
+  }
+
+  .kiki h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .contato.box {
+    display: flex;
+    flex-direction: column; 
+    gap: 50px;               
+    max-width: 500px;        
+    margin: 0 auto;
+  }
+
+  .contato.box h6{
+    margin-bottom: 30PX;
+    font-size: 6000px;
+}
+
+.projetos {
+    padding: 20px;
+    color: white;
+  }
+  
+  .topico {
+    margin-bottom: 40px;
+  }
+  
+  .topico h3 {
+    margin-bottom: 10px;
+  }
+  
+  .grid-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 15px;
+  }
+  
+  .grid-imagens img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: auto; 
+  }
