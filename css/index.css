@@ -112,7 +112,7 @@ footer p {
 
   h5 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
   }
 
@@ -192,3 +192,82 @@ footer p {
     object-fit: cover;
     margin: auto; 
   }
+
+  form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #3d6e61;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  textarea {
+    resize: vertical;
+    width: 579px;
+  }
+  
+  button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #285f53;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1d4b41;
+  }
+
+  .custom-player {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Alinha os elementos verticalmente */
+    gap: 10px;
+    background-color: #285f53; /* Verde estilo Spotify */
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white;
+    font-family: sans-serif;
+    max-width: 400px;
+    margin: 30px auto 0 auto; /* Centraliza horizontalmente e dá um espaçamento superior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .custom-player button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .custom-player input[type=range] {
+    flex: 1;
+    accent-color: white;
+  }
+

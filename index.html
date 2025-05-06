@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicole Beatriz</title>
-    <link rel="stylesheet" href="/css/index.css"
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png">
 </head>
 
 <body>
@@ -50,6 +51,59 @@
     </main>
 
     </div>
+
+        <h5>Minha música favorita</h5>
+
+    <div class="custom-player">
+        <audio id="audio" src="audio/Feel Good Inc..mp3"></audio>
+        <button id="playPause">Play</button>
+        <input type="range" id="seekBar" value="0" />
+        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+        
+      </div>
+
+      <script>
+        const audio = document.getElementById("audio");
+        const playPause = document.getElementById("playPause");
+        const seekBar = document.getElementById("seekBar");
+        const currentTime = document.getElementById("currentTime");
+        const duration = document.getElementById("duration");
+      
+        // Atualiza tempo total quando carrega
+        audio.addEventListener("loadedmetadata", () => {
+          seekBar.max = audio.duration;
+          duration.textContent = formatTime(audio.duration);
+        });
+      
+        // Atualiza barra de progresso
+        audio.addEventListener("timeupdate", () => {
+          seekBar.value = audio.currentTime;
+          currentTime.textContent = formatTime(audio.currentTime);
+        });
+      
+        // Botão de play/pause
+        playPause.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+            playPause.textContent = "Pause";
+          } else {
+            audio.pause();
+            playPause.textContent = "Play";
+          }
+        });
+      
+        // Avança ou retrocede manualmente
+        seekBar.addEventListener("input", () => {
+          audio.currentTime = seekBar.value;
+        });
+      
+        // Função para formatar o tempo
+        function formatTime(sec) {
+          const minutes = Math.floor(sec / 60);
+          const seconds = Math.floor(sec % 60).toString().padStart(2, "0");
+          return `${minutes}:${seconds}`;
+        }
+      </script>
 
 </body>
 </html> 
